@@ -1,0 +1,102 @@
+/* Estilo general del sidenav */
+.sidenav {
+    margin-top: 5%;
+    height: 81.1%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsl(210, 10%, 42%);
+    overflow-x: hidden;
+}
+  
+/* Estilo de las opciones del sidenav y el botón */
+.sidenav a, .dropdown-btn {
+    margin-left: 2%;
+    padding: 6px 8px 6px 16px;
+    margin-top: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: none;
+    display: block;
+    background: none;
+    width:100%;
+    text-align: left;
+}
+  
+/* Estilo cuando se colocola el mouse sobre una de las opciones */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+    background-color: #569de4;
+    border: 2px solid white;
+}
+  
+/* Estilo al Dropdown */
+.dropdown-container {
+    display: none;
+    background-color: hsl(210, 10%, 42%);;
+    padding-left: 8px;
+}
+  
+/* Establecer un estilo a la figura de la flecha 
+para el despliegue de las opciones */
+.fa-caret-down {
+    float: right;
+    margin-right: 10%;
+    transition: transform 0.3s ease;
+}
+
+/* Muestra el contenedor desplegable cuando está activo */
+.dropdown-container.show {
+    display: block;
+}
+
+/* Cambia el icono cuando el dropdown está abierto */
+.dropdown-btn .fa-caret-down.active {
+    transform: rotate(180deg);
+}
+
+/* Establecer un margen superior cuando la pantalla < 600px */
+@media screen and (max-width: 600px){
+	.sidenav {
+        margin-top: 17%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px){
+	.sidenav {
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px){
+	.sidenav {
+        margin-top: 7.6%;
+    }
+}
+
+@media screen and (max-width: 1290px) and (min-width: 1001px) {
+	.sidenav {
+        margin-top: 6.7%;
+    }
+}
+
+@media screen and (max-width: 1355px) and (min-width: 1300px) {
+	.sidenav {
+        margin-top: 6.1%;
+    }
+}
+
+@media screen and (max-width: 1460px) and (min-width: 1356px) {
+	.sidenav {
+        margin-top: 5.8%;
+    }
+}
+
+/* Establecer un margen superior cuando la pantalla > 1461px y < 1980px */
+@media screen and (max-width: 1980px) and (min-width: 1461px) {
+	.sidenav {
+        margin-top: 5.1%;
+    }
+}
