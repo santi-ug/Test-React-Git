@@ -1,6 +1,6 @@
-import "../styles/Main.css";
-import Product from "./Product";
 import Categories from "./categories";
+import Product from "./Product";
+import "../styles/Main.css";
 
 export default function Main() {
 	return (
