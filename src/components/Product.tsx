@@ -1,4 +1,5 @@
 import "../styles/Product.css";
+
 export default function Product(props: {
 	title: string;
 	desc: string;

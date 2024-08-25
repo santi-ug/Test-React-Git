@@ -1,18 +1,29 @@
-import { useState } from "react";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import FormPage from "./components/form";
 import Main from "./components/Main";
+import "./App.css";
 
-function App() {
-	const [count, setCount] = useState(0);
-
+const App: React.FC = () => { 
 	return (
-		<>
-			<Header />
-			<Main />
-			<Footer />
-		</>
+		<Routes>
+			<Route path="/home" element={
+				<>
+					<Header />
+					<Main />
+					<Footer />
+				</>
+			} />
+
+			<Route path="/form" element={
+				<>
+					<Header />
+					<FormPage />
+					<Footer />
+				</>
+			} />
+		</Routes>
 	);
 }
 
