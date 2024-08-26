@@ -1,6 +1,5 @@
-import { useNavigate } from 'react-router-dom';
-import React, { useState } from "react";
 import "../styles/Categories.css";
+import React, { useState } from "react";
 
 const Categories: React.FC = () => {
     // Estado para controlar si el dropdown está abierto o cerrado
@@ -10,13 +9,6 @@ const Categories: React.FC = () => {
     const handleDropdownClick = () => {
         setIsOpen(!isOpen);
     };
-
-    const handleCategoryChange = (selectedCategory: string) => {
-        console.log("Selected category:", selectedCategory);
-        navigate('/form')
-    };
-
-    const navigate = useNavigate();
 
     return (
         <div className="sidenav">
@@ -30,11 +22,11 @@ const Categories: React.FC = () => {
             </button>
 
             <div className={`dropdown-container ${isOpen ? "show" : ""}`}>
-                <a href="#" onClick={() => handleCategoryChange('peticion')}>Petición</a>
-                <a href="#" onClick={() => handleCategoryChange('queja')}>Queja</a>
-                <a href="#" onClick={() => handleCategoryChange('reclamo')}>Reclamo</a>
-                <a href="#" onClick={() => handleCategoryChange('sugerencia')}>Sugerencia</a>
-                <a href="#" onClick={() => handleCategoryChange('felicitacion')}>Felicitación</a>
+                <a href="#">Petición</a>
+                <a href="#">Queja</a>
+                <a href="#">Reclamo</a>
+                <a href="#">Sugerencia</a>
+                <a href="#">Felicitación</a>
             </div>
         </div>
     );

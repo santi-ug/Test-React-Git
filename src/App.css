@@ -7,17 +7,8 @@
 
 .header,
 .main,
-.form,
 .footer {
 	width: 98%;
 	max-width: 1200px;
 	margin: 0 auto;
-}
-
-.header {
-    margin-bottom: 10px; 
-}
-
-.footer {
-    margin-top: 10px;
 }
