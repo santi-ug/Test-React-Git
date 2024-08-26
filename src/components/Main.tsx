@@ -1,13 +1,13 @@
+import "../styles/Main.css";
 import Categories from "./categories";
 import Product from "./Product";
-import "../styles/Main.css";
 
 export default function Main() {
 	return (
 		<main className='main'>
-			<section  className='main__aside'>
+			<section className='main__aside'>
 				<Categories />
-			</section >
+			</section>
 			<section className='main__products'>
 				<Product
 					img='https://www.seriouseats.com/thmb/11qT8GbesT5Uk9YbnIuK98EgZAw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__08__20150815-sous-vide-corn-kenji-9-39c3e634fee04bd7b0de34ac9d580109.jpg'
