@@ -52,8 +52,9 @@
 }
 
 .search-container button {
-	margin-left: 0.5%;
-	font-size: 23px;
+	margin-left: 1%;
+	margin-top: -4px;
+	font-size: 24px;
 	border: 2px solid #616c77; 
     padding: 6px; 
     border-radius: 0 8px 8px 0;
@@ -62,7 +63,7 @@
 }
 
 .search-container button:hover {
-	background-color: #569de4;
+	background-color: cadetblue;
 	color: rgb(255, 255, 255);
 }
 
